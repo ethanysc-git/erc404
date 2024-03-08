@@ -121,6 +121,7 @@ git branch -m main
 git add --all
 git commit -m "first commit"
 git push -u origin main
+git log --oneline
 ```
 
 This task involves setting the `IMAGE_URL` from the .env file as the `dataURI` within the contract.
