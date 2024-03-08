@@ -35,13 +35,13 @@ Before deploying and verifying the contract, don't forget to pass the owner addr
 ```javascript
 // deploy
 const myErc404 = await ethers.deployContract(CONTRACT_NAMES.MY_ERC404, [
-  '/* owner address */',
+  "/* owner address */",
 ]);
 
 // verify
-await run('verify:verify', {
+await run("verify:verify", {
   address: myErc404.address,
-  constructorArguments: ['/* owner address */'],
+  constructorArguments: ["/* owner address */"],
 });
 ```
 
@@ -108,6 +108,19 @@ Sets the dataURI for the NFTs.
 ```bash
 npx hardhat set-data-uri --network sepolia
 npx hardhat set-data-uri --network mainnet
+```
+
+Git.
+
+```bash
+git remote -v
+git remote remove origin
+git remote add origin https://github.com/ethanysc-git/erc404.git
+git branch
+git branch -m main
+git add --all
+git commit -m "first commit"
+git push -u origin main
 ```
 
 This task involves setting the `IMAGE_URL` from the .env file as the `dataURI` within the contract.

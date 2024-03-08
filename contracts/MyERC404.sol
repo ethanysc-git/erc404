@@ -54,7 +54,7 @@ contract MyERC404 is ERC404 {
                 color = "Orange";
             } else if (seed <= 300) {
                 image = "6.png";
-                color = "Lavender";
+                color = "Mint";
             }
 
             string memory jsonPreImage = string.concat(
@@ -63,7 +63,7 @@ contract MyERC404 is ERC404 {
                         '{"name": "My ERC404 #',
                         Strings.toString(id)
                     ),
-                    '","description":"A collection of circles enabled by ERC404, an experimental token standard.","external_url":"","image":"'
+                    '","description":"A collection of color enabled by ERC404, an experimental token standard.","external_url":"","image":"'
                 ),
                 string.concat(dataURI, image)
             );
